@@ -12,7 +12,7 @@ def myBubbleSort(f):
     for i in range(len(f)-1,0,-1):
         tableau_trie = 1
         for j in range(i):
-            if f[j+1]<f[j]:
+            if int(f[j+1])<int(f[j]):
                 f = swap(f[j+1],f[j],f)
                 tableau_trie = 0
         if tableau_trie:
