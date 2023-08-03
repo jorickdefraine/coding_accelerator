@@ -11,7 +11,6 @@ if __name__=="__main__":
                 result+=elt.upper()
             else:
                 result+=elt                
-
         else:
             result+=elt
         
