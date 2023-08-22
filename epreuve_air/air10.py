@@ -1,9 +1,8 @@
-# todo
 import sys
 
 if __name__ == "__main__":
-    list = sys.argv[1:]
+    file = sys.argv[1:][0]
 
-    for elt in list[1:]:
-        print(elt, end=" ")
-    print(list[0])
+    with open(file) as f:
+        lines = f.readlines()[0]
+        print(lines)
